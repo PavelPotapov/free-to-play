@@ -1,0 +1,16 @@
+.filterContainer {
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.filterContainer__inner {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+    .filterContainer__inner {
+        flex-direction: column;
+    }
+
+}
