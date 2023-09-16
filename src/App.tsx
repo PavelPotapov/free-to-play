@@ -198,15 +198,15 @@ function App() {
 	}
 
 	useEffect(() => {
-		fetchCardsV2()
+		fetchCards()
 	}, [])
 
 	useEffect(() => {
 		/* https://www.freetogame.com/api/games?platform=browser&category=mmorpg&sort-by=release-date */
 		if (state.platform || state.sort_by || state.category) {
-			fetchCardsByFilterV2()
+			fetchCardsByFilter()
 		} else {
-			fetchCardsV2()
+			fetchCards()
 		}
 	}, [state])
 

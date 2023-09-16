@@ -93,7 +93,7 @@ function ProductCard() {
 	}
 
 	useEffect(() => {
-		fetchCardV2(id)
+		fetchCard(id)
 	}, [])
 
 	return (

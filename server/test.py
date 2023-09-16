@@ -63,16 +63,5 @@ def filter():
         return {}
 
 
-@app.route('/image', methods=['GET'])
-def image():
-    with open('image.png', 'rb') as f:
-        image_data = f.read()
-        print(image_data)
-    response = make_response(image_data)
-    response.headers.set('Content-Type', 'image/jpeg')
-    response.headers.set(
-        'Content-Disposition', 'attachment', filename='images.jpg')
-    return response
-
 
 app.run(debug=True)
